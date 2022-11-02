@@ -1,0 +1,33 @@
+diff --git a/edl/Library/Modules/oneplus.py b/edl/Library/Modules/oneplus.py
+index 9b3be83..aea266a 100755
+--- a/edl/Library/Modules/oneplus.py
++++ b/edl/Library/Modules/oneplus.py
+@@ -147,10 +147,11 @@ class oneplus(metaclass=LogBase):
+             filehandler = logging.FileHandler(logfilename)
+             self.__logger.addHandler(filehandler)
+         self.ops_parm = None
++        projid='18821'
+         self.ops = self.convert_projid(fh, projid, serial)
+ 
+     def getprodkey(self, projid):
+-        if projid in ["18825", "18801"]:  # key_guacamoles, fajiita
++        if projid in ["18825", "18801", "18821"]:  # key_guacamoles, fajiita, guacamole
+             prodkey = "b2fad511325185e5"
+         else:  # key_op7t/op8/N10
+             prodkey = "7016147d58e8c038"
+@@ -164,7 +165,6 @@ class oneplus(metaclass=LogBase):
+             rand = int(random.randint(0, 0x100))
+             nr = (rand & 0xFF) % 0x3E
+             pk += chr(val[nr])
+-
+         if projid in deviceconfig:
+             version = deviceconfig[projid]["version"]
+             cm = deviceconfig[projid]["cm"]
+@@ -243,7 +243,7 @@ class oneplus1:
+         self.ModelVerifyPrjName = ModelVerifyPrjName
+         self.fh = fh
+         self.random_postfix = "8MwDdWXZO7sj0PF3"
+-        self.Version = "guacamoles_21_O.22_191107"
++        self.Version = "guacamole_21_H.04_190416"
+         self.cf = str(cf)
+         self.soc_sn = str(serial)
