@@ -1,5 +1,6 @@
 # play_with_oneplus7pro
 
+[here is my blog in Chinese](https://o0xmuhe.github.io/2022/11/01/Qual-Android%E6%96%B9%E6%A1%88Unlock%E5%AD%A6%E4%B9%A0-%E4%BB%A5Oneplus7Pro%E4%B8%BA%E4%BE%8B/)
 
 ## firehose
 
