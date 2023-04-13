@@ -1,0 +1,8 @@
+dump_imgs/*_unpack
+dump_imgs/modem_a_dir
+dump_imgs/unpack_xbl/*.i64
+*.i64
+dump_imgs/*.i64
+dump_imgs/modem_a
+dump_imgs/core_nhlos_a
+dump_imgs/boot_a

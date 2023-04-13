@@ -13,6 +13,8 @@ Edl(with tag 3.52.1)patch for support guacamole, I use hardcode for projid and s
 
 After apply this patch(or modify edl's source code), you can flash Oneplus7Pro with edl :) Enjoy
 
+## dump imgs
+Color OS V12.1
 
 # reference
 
